@@ -21,7 +21,7 @@
     "location2": "WestUS",
 
     "frontDoorName": "[concat('FD-', parameters('EngineerAlias'))]",
-    "backendAddress": "[concat('appEast-', parameters('EngineerAlias'), 'azurewebsites.net')]"
+    "backendAddress": "[concat('appEast-', parameters('EngineerAlias'), '.azurewebsites.net')]"
   },
 
   "resources": [
@@ -192,6 +192,10 @@
             }
           }
         ],
+        "backendPoolsSettings": {
+          "enforceCertificateNameCheck": "Enabled",
+          "sendRecvTimeoutSeconds": 240
+        },
         "enabledState": "Enabled"
       }
     }
