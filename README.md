@@ -5,7 +5,7 @@ App Service Configuration for Front Door Training
 
 ## This arm deployment will:
 
-1. Crate two App Service Plans - one in East US, one in West US
+1. Create two App Service Plans - one in East US, one in West US
 2. Create two App Services - one under each app service plan
 3. Create an Azure Front Door resource
 4. Add Frontend, Backend and routing rule for one of the App Service's deployed
